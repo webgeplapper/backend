@@ -13,5 +13,5 @@ $app->group(['prefix' => 'api'], function () use ($app) {
 });
 
 $app->get('/', function () use ($app) {
-    return $app->version();
+    return view('index');
 });
